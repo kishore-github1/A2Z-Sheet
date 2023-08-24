@@ -5,7 +5,7 @@ vector<vector<int>> levelOrder(TreeNode *root)
 {
     vector<vector<int>> ans;
     if (root == NULL)
-        return ans;
+        return ans  ;
 
     queue<TreeNode *> q;
     q.push(root);
