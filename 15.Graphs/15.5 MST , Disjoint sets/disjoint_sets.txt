@@ -1,0 +1,16 @@
+* Disjoint set -> helps us to tell whether two vertices belong to same component in constant time 
+
+* Rank , parent , ultimate parent -> parameters used  in this process
+    * Rank -> distance of farest leaf node 
+    * parent , ultimate parent -> similar to root node 
+
+* Union(u,v) by Rank : 
+    1. find ultimate parent of u & v -> pu , pv 
+    2. find rank of pu , pv 
+    3. Connect smaller rank to larger rank always  
+
+* Path Compression : 
+    Attaching nodes directly to ultimate parent 
+
+* Union(u,v) by Size : 
+    * instead of rank array, we use size array 
