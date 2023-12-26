@@ -12,7 +12,7 @@ int recur(int n, vector<int> &dp)
     if (dp[n] != -1)
         return dp[n];
 
-    int left = recur(n - 1, dp);
+    int left = recur(n - 1, dp) ;
     int ryt = recur(n - 2, dp);
     dp[n] = left + ryt;
     return dp[n];
